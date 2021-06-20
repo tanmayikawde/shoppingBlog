@@ -1,0 +1,55 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container1{
+    position: relative;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container1 .web-logo{
+    position: relative;
+    max-width: 800px;
+    height: 700px;
+    width: 700px;
+    background: rgb(250, 249, 244);
+    padding: 20px 15px;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 200px rgb(57, 45, 45);
+}
+.container1 .web-logo .imgbox{
+    position: relative;
+    width: 460px;
+    height: 460px;
+    top: -30px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0,0.2);
+    filter: drop-shadow(6px 5px 6px rgb(18,20,44));
+}
+.image{
+    width: 600px;
+    height: 450px;
+}
+.container1 .web-logo .info{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+.container1 .web-logo:hover .info{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.5s ease-in;
+}
